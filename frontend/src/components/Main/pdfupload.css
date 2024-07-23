@@ -1,0 +1,96 @@
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+
+}
+
+.popup-content {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.popup-content h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+.popup-content form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-content input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px dashed #ccc;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+.popup-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.popup-buttons button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.popup-buttons button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.popup-buttons button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.popup-buttons button[type="button"] {
+    background-color: #f44336;
+    color: white;
+}
+
+.popup-buttons button[type="button"]:hover {
+    background-color: #d32f2f;
+}
+
+@media (max-width: 600px) {
+    .popup-content {
+        width: 95%;
+        padding: 30px;
+    }
+
+    .popup-buttons {
+        flex-direction: column;
+    }
+
+    .popup-buttons button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

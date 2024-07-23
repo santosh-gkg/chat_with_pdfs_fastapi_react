@@ -1,0 +1,5 @@
+frontend/node_modules
+frontend/.github
+frontend/.vscode   
+frontend/dist   
+express_backend/node_modules
