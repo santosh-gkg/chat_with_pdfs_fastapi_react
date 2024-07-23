@@ -3,3 +3,4 @@ frontend/.github
 frontend/.vscode   
 frontend/dist   
 express_backend/node_modules
+fastapi_backend/.env
